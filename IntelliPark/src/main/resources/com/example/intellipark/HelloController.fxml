@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.intellipark.HelloController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="257.0" style="-fx-background-color: #00008B;">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="209.0" layoutX="9.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\User\Downloads\park-logoo.png" />
+               </image></ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="175.0" prefHeight="52.0" prefWidth="150.0" text="IntelliPark" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="341.0" prefHeight="52.0" prefWidth="161.0" text="Support:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="16.0" layoutY="386.0" prefHeight="70.0" prefWidth="186.0" text="(0769) 696 969" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="600.0" prefWidth="607.0" style="-fx-background-color: #FFF200;">
+         <children>
+            <ImageView fitHeight="141.0" fitWidth="150.0" layoutX="210.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="C:\Users\User\Downloads\lock2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="56.0" layoutY="231.0" prefHeight="43.0" prefWidth="215.0" text="License plate:">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="300.0" prefHeight="43.0" prefWidth="215.0" text="Duration:">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_reserve" layoutX="189.0" layoutY="388.0" mnemonicParsing="false" opacity="0.78" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: #000000; -fx-cursor: hand;" text="Reserve" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="24.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tf_license" alignment="CENTER" layoutX="271.0" layoutY="235.0" prefHeight="35.0" prefWidth="173.0" promptText="XX-XX-XXX">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <ChoiceBox layoutX="271.0" layoutY="309.0" prefHeight="25.0" prefWidth="173.0" />
+            <Label layoutX="65.0" layoutY="513.0" prefHeight="25.0" prefWidth="150.0" />
+            <Button fx:id="button_admin" layoutX="404.0" layoutY="538.0" mnemonicParsing="false" opacity="0.78" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: #000000; -fx-cursor: hand;" text="Admin log-in" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.intellipark.UserController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="257.0" style="-fx-background-color: #00008B;">
+            <children>
+                <ImageView fitHeight="114.0" fitWidth="209.0" layoutX="12.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="C:\Users\User\Downloads\park-logoo.png" />
+                    </image></ImageView>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="175.0" prefHeight="52.0" prefWidth="150.0" text="IntelliPark" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold Italic" size="24.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="341.0" prefHeight="52.0" prefWidth="161.0" text="Support:" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold Italic" size="24.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="16.0" layoutY="386.0" prefHeight="70.0" prefWidth="186.0" text="(0769) 696 969" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold Italic" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="600.0" prefWidth="607.0" style="-fx-background-color: #FFF200;">
+            <children>
+                <ImageView fitHeight="141.0" fitWidth="150.0" layoutX="217.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="C:\Users\User\Downloads\lock2.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="14.0" layoutY="259.0" prefHeight="43.0" prefWidth="215.0" text="License plate:">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="377.0" prefHeight="43.0" prefWidth="215.0" text="Duration:">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_reserve" layoutX="195.0" layoutY="433.0" mnemonicParsing="false" onAction="#reserveUser" opacity="0.78" prefHeight="58.0" prefWidth="186.0" style="-fx-background-color: #000000; -fx-cursor: hand;" text="Reserve" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold Italic" size="24.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="tf_license" alignment="CENTER" layoutX="178.0" layoutY="261.0" prefHeight="35.0" prefWidth="173.0" promptText="XX-XX-XXX">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <ChoiceBox fx:id="cb_duration" layoutX="160.0" layoutY="386.0" prefHeight="25.0" prefWidth="173.0" />
+                <Label layoutX="65.0" layoutY="513.0" prefHeight="25.0" prefWidth="150.0" />
+                <Button fx:id="button_admin" layoutX="404.0" layoutY="538.0" mnemonicParsing="false" onAction="#AdminPage" opacity="0.78" prefHeight="30.0" prefWidth="123.0" style="-fx-background-color: #000000; -fx-cursor: hand;" text="Admin log-in" textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+            <Label layoutX="14.0" layoutY="144.0" prefHeight="43.0" prefWidth="215.0" text="Name:">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_name" alignment="CENTER" layoutX="131.0" layoutY="146.0" prefHeight="39.0" prefWidth="243.0" promptText="Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="326.0" prefHeight="43.0" prefWidth="215.0" text="Vehicle type:">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="cb_vehicle" layoutX="185.0" layoutY="335.0" prefHeight="25.0" prefWidth="173.0" />
+            <Label layoutX="14.0" layoutY="198.0" prefHeight="43.0" prefWidth="215.0" text="e-mail address:">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_email" alignment="CENTER" layoutX="195.0" layoutY="202.0" prefHeight="39.0" prefWidth="250.0" promptText="Your email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="label_WrongInfo" alignment="CENTER" layoutX="25.0" layoutY="513.0" prefHeight="39.0" prefWidth="352.0" textFill="#f50000">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            </children></AnchorPane>
+    </children>
+</HBox>
